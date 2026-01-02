@@ -6,14 +6,18 @@ const channelSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
-  createdBy: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "User",
-  },
   members: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
   }],
+   maxMembers: {
+      type: Number,
+      default: 5
+    },
+      createdBy: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+  },
 }, { timestamps: true });
 
 export default mongoose.model("Channel", channelSchema);

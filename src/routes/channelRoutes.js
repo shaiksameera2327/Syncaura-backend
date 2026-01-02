@@ -18,7 +18,7 @@ router.post(
   createChannel
 );
 
-router.post("/:id/join", auth, joinChannel);
-router.post("/:id/leave", auth, leaveChannel);
+router.post("/:channelId/join", auth, joinChannel);
+router.post("/:channelId/leave", auth, leaveChannel);
 
 export default router;
