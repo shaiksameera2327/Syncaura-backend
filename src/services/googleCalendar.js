@@ -32,7 +32,6 @@ export const createCalendarEvent = async ({
       description,
       start: { dateTime: startTime },
       end: { dateTime: endTime },
-      attendees: participants?.map((email) => ({ email })),
     },
   });
 
