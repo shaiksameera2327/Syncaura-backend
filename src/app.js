@@ -15,6 +15,8 @@ import dashboardRoutes from './routes/dashboardRoutes.js';
 import leaveRoutes from './routes/leaveRoutes.js'
 import noteRoutes from "./routes/note.routes.js";
 import attachmentRoutes from "./routes/attachment.routes.js";
+import meetingRoutes from "./routes/meeting.routes.js";
+import calendarTestRoute from "./routes/calendarTest.route.js";
 
 
 dotenv.config();
@@ -44,6 +46,8 @@ app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/leave', leaveRoutes);
 app.use("/api/attachments",attachmentRoutes);
 app.use("/api/notes",noteRoutes);
+app.use("/api/meetings", meetingRoutes);
+app.use("/api", calendarTestRoute);
 // Health check route
 app.get('/health', (req, res) => res.json({ status: 'ok' }));
 
