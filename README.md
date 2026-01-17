@@ -229,9 +229,9 @@ PORT=5000
 NODE_ENV=development
 
 # MongoDB Configuration
-MONGO_URI=mongodb://localhost:27017/syncaura
+MONGO_URI=mongodb://localhost:27017/clustername
 # OR for MongoDB Atlas:
-# MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/syncaura
+# MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/clustername
 
 # JWT Configuration
 JWT_SECRET=your-super-secret-jwt-key-here
@@ -529,3 +529,4 @@ For issues, questions, or contributions, please open an issue in the repository 
 ---
 
 ⭐ If you find this project useful, consider starring the repository!
+
