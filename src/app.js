@@ -12,7 +12,6 @@ import channelRoutes from './routes/channelRoutes.js';
 import noticeRoutes from "./routes/notice.routes.js";
 import documentRoutes from "./routes/documentRoutes.js";
 import reportRoutes from "./routes/reportRoutes.js";
-main
 import chatRoutes from "./routes/chatRoutes.js";
 import projectRoutes from "./routes/projectRoutes.js";
 import dashboardRoutes from './routes/dashboardRoutes.js';
@@ -51,7 +50,6 @@ app.use("/api/documents", documentRoutes);
 app.use("/api/reports", reportRoutes);
  main
 app.use("/api/chat", chatRoutes);
-=======
 app.use("/api/projects", projectRoutes);
 app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/leave', leaveRoutes);
