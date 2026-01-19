@@ -1,4 +1,3 @@
-
 # Syncaura Backend 🚀
 
 Syncaura Backend is a comprehensive **Node.js/Express-based REST API** built with **MongoDB** and **Socket.IO** for real-time features. It provides a robust backend infrastructure for a team collaboration and project management platform, handling authentication, project management, task tracking, real-time messaging, document management, meetings, and more.
